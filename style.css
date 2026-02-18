@@ -1,1 +1,140 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Lato:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* NAVIGATION */
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    background: transparent; /* removes white bar */
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.nav__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.movie__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.movie__logo img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    padding: 0;
+    margin: 0;
+    display: block;
+    border-radius: 75%;
+}
+
+.nav__links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  
+}
+
+.nav__links a {
+    text-decoration: none;
+      color: white;
+    font-weight: 500;
+}
+
+.nav__btn {
+    padding: 8px 18px;
+    border: 2px solid #243e63;
+    border-radius: 20px;
+    background-color: white;
+    color: #243e63 !important;
+}
+
+/* HERO SECTION */
+
+#hero {
+    height: 260px;
+    background-image: url("./assets/mibro-car-racing.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero__overlay {
+    background: rgba(36, 62, 99, 0.75);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 20px;
+}
+
+.hero__overlay h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* SEARCH BAR */
+
+.search__bar {
+    background: white;
+    border-radius: 30px;
+    padding: 10px 18px;
+    display: flex;
+    align-items: center;
+    width: 420px;
+    max-width: 90%;
+}
+
+.search__bar input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+}
+
+.search__bar i {
+    color: #243e63;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .nav__links {
+        gap: 16px;
+        font-size: 14px;
+    }
+
+    .hero__overlay h1 {
+        font-size: 22px;
+    }
+}

@@ -4,32 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie</title>
+    <script src="index.js"defer></script>
     <script src="https://kit.fontawesome.com/e92efa1168.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"defer></script>
 </head>
 
 <body>
-<nav>
-    <div class="container">
-        <div class="row">
-                <div class="movie__logo">
-                <img src="./assets/movie.png" alt="logo">
-                <div class="Nav__bar">
-                <h3>Home</h3>
-                <h3>Find you movie</h3>
-                <h3>Contact</h3>
-                <div class="background__img--wrapper">
-                 <img src="/assets/mibro-car-racing.jpg" alt="background__img">
 
-                 <i class="fa-solid fa-magnifying-glass"></i>
-                 </div>
-                </div>
-            </div>
+<!-- NAVIGATION -->
+<nav>
+    <div class="container nav__container">
+        <div class="movie__logo">
+            <img src="./assets/movie.png" alt="logo">
+    
+        </div>
+
+        <div class="nav__links">
+            <a href="#">Home</a>
+            <a href="#">Find your Movie</a>
+            <a href="#" class="nav__btn">Contact</a>
         </div>
     </div>
 </nav>
 
-    
+<!-- HERO / BANNER -->
+<section id="hero">
+    <div class="hero__overlay">
+        <h1>Browse our movies</h1>
+
+        <div class="search__bar">
+            <input type="text" placeholder="Search by Movie, Actor or Keyword">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+</section>
+
 </body>
 </html>
