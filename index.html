@@ -37,7 +37,52 @@
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
     </div>
-</section>
+ <!-- Main Content -->
+    <div class="container">
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <div class="filter-header">
+                <h2>Search results:</h2>
+            </div>
+            
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label for="titleFilter">Filter by Title:</label>
+                    <input 
+                        type="text" 
+                        id="titleFilter" 
+                        class="filter-input" 
+                        placeholder="Enter movie title...">
+                </div>
+                
+                <div class="filter-group">
+                    <label for="yearFilter">Filter by Year:</label>
+                    <select id="yearFilter" class="filter-select">
+                        <option value="">All Years</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <button id="resetBtn" class="reset-btn">Reset Filters</button>
+                </div>
+            </div>
+        </div>
 
+        <!-- Loading State -->
+        <div id="loading" class="loading">Loading movies...</div>
+
+        <!-- Error State -->
+        <div id="error" class="error" style="display: none;">Failed to load movies. Please try again.</div>
+
+        <!-- Movies Grid -->
+        <div class="movies-grid" id="moviesGrid"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+</body>
+</html>
 </body>
 </html>
