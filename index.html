@@ -45,27 +45,28 @@
                 <h2>Search results:</h2>
             </div>
             
-            <div class="filters-container">
-                <div class="filter-group">
-                    <label for="titleFilter">Filter by Title:</label>
-                    <input 
-                        type="text" 
-                        id="titleFilter" 
-                        class="filter-input" 
-                        placeholder="Enter movie title...">
-                </div>
+            <!-- Single Dropdown Button -->
+            <div class="filter-dropdown-wrapper">
+                <button class="filter-dropdown-btn" id="filterDropdownBtn">
+                    <span>Filter by Title & Year</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
                 
-                <div class="filter-group">
-                    <label for="yearFilter">Filter by Year:</label>
-                    <select id="yearFilter" class="filter-select">
-                        <option value="">All Years</option>
-                    </select>
-                </div>
-                
-                <div class="filter-group">
-                    <button id="resetBtn" class="reset-btn">Reset Filters</button>
-                </div>
-            </div>
+                <!-- Dropdown Content -->
+                <div class="filter-dropdown-content" id="filterDropdown">
+                    <div class="filter-dropdown-inner">
+                        <input 
+                            type="text" 
+                            id="titleFilter" 
+                            class="filter-input" 
+                            placeholder="Search by title...">
+                        
+                        
+                        <div class="filter-actions">
+                            <button id="applyBtn" class="apply-btn">Apply</button>
+                            <button id="resetBtn" class="reset-btn">Reset</button>
+                        </div>
+                    </div>
         </div>
 
         <!-- Loading State -->
@@ -78,7 +79,7 @@
         <div class="movies-grid" id="moviesGrid"></div>
     </div>
 
-    <script src="script.js"></script>
+    
 </body>
 </html>
 
